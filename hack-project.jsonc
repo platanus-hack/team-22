@@ -2,7 +2,7 @@
   // nombre de su producto / solución
   "project_name": "yournal",
   // descripción de una frase y directa al grano de la solución
-  "oneliner": "Mejora tu bienestar mental con journaling impulsado por IA.",
+  "oneliner": "Escribes, descubres, mejoras: Tu bienestar emocional comienza aquí.",
   // url al logo de proyecto. mínimo 200x200, png. puede estar hosteado en el mismo repo.
   "logo_url": "https://github.com/user-attachments/assets/8ddb2e1f-44bb-4f12-a663-c513467ac540",
   // url para acceder a su app. si es apk u otro, link de descarga directa.
