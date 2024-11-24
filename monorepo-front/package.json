@@ -1,0 +1,13 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "start:admin": "yarn workspace admin dev",
+    "start:landing": "yarn workspace landing dev",
+    "build:admin": "yarn workspace admin build",
+    "build:landing": "yarn workspace landing build"
+  }
+}

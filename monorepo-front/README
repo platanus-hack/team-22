@@ -1,0 +1,71 @@
+Monorepo Project
+This is a monorepo project containing the following applications:
+
+Landing: Built with Astro.
+Admin: Built with Vite.js, Tailwind CSS, NextUI, and NextUI Pro. It includes authentication and requires a Supabase project.
+Common: Contains shared code such as APIs, types, and other utilities.
+Getting Started
+Prerequisites
+Node.js
+Yarn
+Supabase account
+Installation
+
+Clone the repository:
+
+git clone <your-repo-url>
+cd <your-repo-name>
+
+Install the dependencies:
+
+yarn
+
+Configuration
+Supabase Setup:
+
+Create a new project in Supabase.
+Get the Supabase URL and API key.
+Environment Variables:
+
+Create a .env file in the apps/admin directory and add the following variables:
+
+env
+
+VITE_SUPABASE_URL=<your-supabase-url>
+VITE_SUPABASE_KEY=<your-supabase-anon-key>
+
+Running the Applications
+Landing
+To start the landing page application:
+
+yarn start:landing
+
+Admin
+To start the admin application:
+
+yarn start:admin
+
+Directory Structure
+
+monorepo/
+├── apps/
+│   ├── admin/
+│   │   ├── public/
+│   │   ├── src/
+│   │   ├── .env         # Environment variables for Supabase
+│   │   ├── index.html
+│   │   ├── package.json
+│   │   └── vite.config.ts
+│   ├── common/
+│   │   ├── src/
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   └── landing/
+│       ├── public/
+│       ├── src/
+│       ├── astro.config.mjs
+│       ├── package.json
+│       └── tsconfig.json
+├── package.json
+└── yarn.lock
+
