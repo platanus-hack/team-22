@@ -8,6 +8,11 @@ Mediante un flujo de procesamiento de datos, Yournal transforma las entradas de 
 
 Puedes probar una demo en [yournal.online](https://yournal.online/)
 
+<br/>
+<br/>
+
+---
+
 A continuación, se describe la arquitectura de IA y el flujo de trabajo que hace posible esta experiencia única.
 
 ## 🧠 Arquitectura y Flujo de Inteligencia Artificial
