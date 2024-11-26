@@ -33,6 +33,12 @@ Este paso es fundamental para establecer relaciones entre los hechos y las emoci
 ### 4. **Generación de Resumen y Estado Anímico 😊💬**
 Para ayudar al usuario a reflexionar sobre su día, se genera un resumen del input proporcionado, junto con una evaluación del estado anímico representado. Este análisis se realiza mediante un modelo de IA que examina el texto y evalúa la emocionalidad de los eventos descritos.
 
+<br/>
+
+![Recopilación de inputs y organización de datos](https://github.com/user-attachments/assets/74034984-4983-4362-9528-e251a434938f)
+
+<br/>
+
 ### 5. **Creación de JSON de Hechos y Emociones 📊**
 La información sobre hechos y emociones se convierte en un archivo JSON estructurado, con los atributos de los hechos y las emociones principales claramente definidos. Este formato facilita la posterior manipulación y consulta de los datos. **Este proceso es dinámico**, ya que con cada entrada del usuario, la base de datos se va actualizando y enriqueciéndose.
 
@@ -49,6 +55,12 @@ En esta fase, se generan embeddings tanto para los hechos como para las emocione
 Con la tabla vectorial en Pinecone lista, se pueden realizar diferentes tipos de consultas:
 - **Recomendaciones**: Sugerencias personalizadas basadas en patrones emocionales.
 - **Reconocimiento de Patrones**: Identificación de ten- **Búsqueda por Hechos o Emociones**: Localización de eventos o sentimientos similares en el historial del usuario.
+
+<br/>
+
+![Patrones](https://github.com/user-attachments/assets/233685b9-d3d8-4daf-8b88-3a03efb2923d)
+
+<br/>
 
 #### ⚡ **Técnica K-Nearest Neighbors (KNN) para Consultas**
 El proceso de consulta se realiza utilizando la técnica de **K-Nearest Neighbors (KNN)**, que es fundamental para obtener patrones y correlaciones entre los hechos y las emociones del usuario.
@@ -77,16 +89,29 @@ El proceso de consulta se realiza utilizando la técnica de **K-Nearest Neighbor
 En el centro de la experiencia de Yournal se encuentra el **Dashboard del Usuario**, una interfaz visual donde se presentan las recomendaciones personalizadas basadas en el análisis emocional y los patrones de comportamiento del usuario. Este dashboard se actualiza continuamente en función de los nuevos inputs proporcionados y las consultas realizadas, lo que garantiza que las recomendaciones y consejos estén siempre alineados con el estado más reciente del usuario.
 
 #### 💡 Funcionalidad del Dashboard:
+
+<br/>
+
+![Recomendaciones y consultas](https://github.com/user-attachments/assets/f00d0014-0f69-4e03-b32e-c20da1355a91)
+
+<br/>
+
 - **Recomendaciones de Bienestar**: Basadas en el análisis de los eventos más frecuentes que afectan el estado emocional del usuario. Se presentan recomendaciones para mantener o aumentar la felicidad, como actividades específicas que han demostrado generar emociones positivas.
 
 - **Hábitos que Están Funcionando**: El sistema identifica y resalta los hábitos o acciones recurrentes que están contribuyendo positivamente al bienestar del usuario. Esto permite que el usuario reconozca lo que está haciendo bien y continúe con esos comportamientos.
 
 - **Áreas de Mejora**: A través de consultas vectoriales filtradas por el usuario, el sistema identifica patrones negativos o áreas donde el usuario podría mejorar. Por ejemplo, si ciertas actividades o situaciones generan emociones negativas de forma recurrente, el sistema sugiere formas de cambiarlas o evitarlas para mejorar el bienestar general.
 
+- **Registro de entradas de diario**: Se guardan las entradas de audio y texto por día, podiendo ir a cualquier día en que se haya hecho una. Esto alimenta el modelo para realizar recomendaciones y conversaciones más personalizadas.
+
+<br/>
+
+![Diario de vida en Yournal](https://github.com/user-attachments/assets/0bf483bc-1d00-4bce-92a1-55d929e3dbf5)
+
+<br/>
+
 #### 🛠️ **Consultas Vectoriales Filtradas por Usuario**
 Para generar las recomendaciones y análisis que aparecen en el Dashboard, se utilizan consultas vectoriales avanzadas. El sistema filtra la información según el historial del usuario, lo que permite obtener insights basados exclusivamente en los datos relevantes de esa persona. A través de estas consultas, se buscan patrones específicos de comportamientos, hechos y emociones dentro del espacio vectorial de Pinecone. Este enfoque personalizado asegura que las recomendaciones sean precisas y adaptadas a las necesidades individuales de cada usuario.
-
-
 
 # Yournal Backend
 
