@@ -1,4 +1,4 @@
-# Yournal - La Aplicación Inteligente de Reflexión y Recomendaciones 🦾🧠😊
+# Yournal - Journaling potenciado por IA 🧠✍️
 
 ![Yournal AI](https://github.com/user-attachments/assets/df9f3b13-48b8-4fa3-97da-1de043dfc95a)
 
