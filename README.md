@@ -140,3 +140,6 @@ Este es el backend para la aplicación Yournal, un diario inteligente que proces
 ### Utilidades (`/utils`)
 - `insightAnalyzer.js` - Análisis y generación de insights emocionales
 - `userRequests.js` - Helpers para manejo de peticiones de usuario
+
+**Próximamente, descarga la app!**
+![appicon](https://github.com/user-attachments/assets/c15561fd-83bf-419f-9cd4-5495c4fdc2b4)
