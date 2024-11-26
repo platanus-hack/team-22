@@ -6,5 +6,5 @@
   // url al logo de proyecto. mínimo 200x200, png. puede estar hosteado en el mismo repo.
   "logo_url": "https://github.com/user-attachments/assets/8ddb2e1f-44bb-4f12-a663-c513467ac540",
   // url para acceder a su app. si es apk u otro, link de descarga directa.
-  "app_url": "https://monorepo-hackathon-pv-admin.vercel.app/"
+  "app_url": "https://www.yournal.online/"
 }
