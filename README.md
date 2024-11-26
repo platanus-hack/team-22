@@ -1,8 +1,14 @@
 # Yournal - La Aplicación Inteligente de Reflexión y Recomendaciones 🦾🧠😊
 
-![WhatsApp Image 2024-11-24 at 05 19 09](https://github.com/user-attachments/assets/8ddb2e1f-44bb-4f12-a663-c513467ac540)
+![WhatsApp Image 2024-11-24 at 05 19 09](blob:https://web.whatsapp.com/d00ebd08-c428-4501-a843-21edb7efd3cf)
 
-Yournal es una aplicación innovadora que utiliza inteligencia artificial avanzada para analizar y proporcionar recomendaciones personalizadas basadas en el día a día de los usuarios. Mediante un flujo sofisticado de procesamiento de datos, Yournal transforma las entradas de los usuarios en insights valiosos que fomentan el bienestar y el autoconocimiento. A continuación, se describe la arquitectura de IA y el flujo de trabajo que hace posible esta experiencia única.
+Yournal es una aplicación que utiliza inteligencia artificial avanzada para analizar y proporcionar recomendaciones personalizadas basadas en el día a día de los usuarios.
+
+Mediante un flujo de procesamiento de datos, Yournal transforma las entradas de los usuarios en insights valiosos que fomentan el bienestar y el autoconocimiento.
+
+Puedes probar una demo en [yournal.online](https://yournal.online/)
+
+A continuación, se describe la arquitectura de IA y el flujo de trabajo que hace posible esta experiencia única.
 
 ## 🧠 Arquitectura y Flujo de Inteligencia Artificial
 
@@ -26,10 +32,10 @@ Para ayudar al usuario a reflexionar sobre su día, se genera un resumen del inp
 La información sobre hechos y emociones se convierte en un archivo JSON estructurado, con los atributos de los hechos y las emociones principales claramente definidos. Este formato facilita la posterior manipulación y consulta de los datos. **Este proceso es dinámico**, ya que con cada entrada del usuario, la base de datos se va actualizando y enriqueciéndose.
 
 ### 6. **Generación de Embeddings y Almacenamiento en Pinecone 🔑**
-En esta fase, se generan embeddings tanto para los hechos como para las emociones, que se almacenan en una **tabla vectorial en Pinecone**. Pinecone es una solución de almacenamiento vectorial que permite manejar grandes volúmenes de datos de manera eficiente. 
+En esta fase, se generan embeddings tanto para los hechos como para las emociones, que se almacenan en una **tabla vectorial en Pinecone**. Pinecone es una solución de almacenamiento vectorial que permite manejar grandes volúmenes de datos de manera eficiente.
 
 - **Cálculo de Producto Punto**: Para obtener una representación conjunta de hechos y emociones, se calcula el producto punto entre los embeddings de ambos. Esto permite medir la relación entre las acciones y los sentimientos del usuario.
-  
+
 - **Poda de Vectores**: Para reducir el ruido y optimizar el procesamiento, se poda el vector combinado utilizando un threshold. Esto elimina los valores de baja relevancia, asegurando que solo se mantengan los datos que aportan valor a la toma de decisiones.
 
   Lo más importante es que **la tabla vectorial es dinámica**, lo que significa que con cada nueva entrada del usuario, los embeddings se recalculan y la base de datos se actualiza. A medida que el sistema conoce más al usuario, las recomendaciones y decisiones se vuelven más precisas y personalizadas.
@@ -67,7 +73,7 @@ En el centro de la experiencia de Yournal se encuentra el **Dashboard del Usuari
 
 #### 💡 Funcionalidad del Dashboard:
 - **Recomendaciones de Bienestar**: Basadas en el análisis de los eventos más frecuentes que afectan el estado emocional del usuario. Se presentan recomendaciones para mantener o aumentar la felicidad, como actividades específicas que han demostrado generar emociones positivas.
-  
+
 - **Hábitos que Están Funcionando**: El sistema identifica y resalta los hábitos o acciones recurrentes que están contribuyendo positivamente al bienestar del usuario. Esto permite que el usuario reconozca lo que está haciendo bien y continúe con esos comportamientos.
 
 - **Áreas de Mejora**: A través de consultas vectoriales filtradas por el usuario, el sistema identifica patrones negativos o áreas donde el usuario podría mejorar. Por ejemplo, si ciertas actividades o situaciones generan emociones negativas de forma recurrente, el sistema sugiere formas de cambiarlas o evitarlas para mejorar el bienestar general.
@@ -104,5 +110,3 @@ Este es el backend para la aplicación Yournal, un diario inteligente que proces
 ### Utilidades (`/utils`)
 - `insightAnalyzer.js` - Análisis y generación de insights emocionales
 - `userRequests.js` - Helpers para manejo de peticiones de usuario
-
-
